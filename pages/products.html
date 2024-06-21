@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product  Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .search-bar {
+            margin-right: 20px;
+        }
+        .search-bar input[type="text"] {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            border-radius: 4px;
+        }
+        main {
+            display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+        }
+        .product-card {
+            padding: 10px;
+    margin-bottom: 60px;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 10px; /* Added padding for better presentation */
+    background-color: #fff; /* Ensure background color for visibility */
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px; /* Adjusted height for better image display */
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+       
+        /* footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        } */
+        /* img{
+            margin: 10px;
+            padding: 10px;
+            display: block;
+            width: fit-content;
+        } */
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..">
+        </div>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+  <main id ="main-list">$PRODUCTS$</main>
+
+    <footer >
+        <!-- <p>&copy; 2024 productdemo.com All rights reserved.</p> -->
+    </footer>
+
+</body>
+</html>
