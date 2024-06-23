@@ -36,6 +36,7 @@ const app = http.createServer(async(req,res)=>{
             res.end(text);
             break;
         }
+        
         case "/view":{
             // res.end(`<div><h2>This is product id = ${query.id}</h2></div>`);
             // break;
