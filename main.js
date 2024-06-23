@@ -59,7 +59,7 @@ const app = http.createServer(async(req,res)=>{
               </div>
             `;
             }
-            text = text.replace("$PRODUCTS$",productText);
+            text = text.replace("$VIEW$",productText);
             
             res.end(text);
             break;
