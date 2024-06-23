@@ -17,7 +17,7 @@ const app = http.createServer(async(req,res)=>{
             break;
         }
         case "/products":{
-            const bf = await(fsPromises.readFile(`${__dirname}/products.html`));
+            const bf = await(fsPromises.readFile(`${__dirname}/pages/products.html`));
             
             let text = bf.toString();
             let productText="";
